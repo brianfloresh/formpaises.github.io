@@ -3,9 +3,9 @@ self.addEventListener('install', (event) => {
       caches.open('direccion-form-cache').then((cache) => {
         return cache.addAll([
           '/',
-          'index.html',
-          'manifest.json',
-          'icon.ico',
+          '/index.html',
+          '/manifest.json',
+          '/icon.ico',
           // Agrega más rutas si es necesario
         ]);
       })
